@@ -88,3 +88,8 @@ body.dark .imageTw {
     font-weight: 400;
     font-family: Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif;
 }
+
+.card-body h1 {
+    font-weight: 400;
+    font-family: Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif;
+}
