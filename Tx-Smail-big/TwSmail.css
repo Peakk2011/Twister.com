@@ -1,0 +1,92 @@
+.sidenav h1 {
+    font-size: 30px;
+}
+
+#active {
+    font-size: 20px;
+}
+
+.sidenav {
+    width: 210px;
+}
+
+.sidenav a {
+    padding: 11px 8px 5px 16px;
+    font-size: 20px;   
+}
+
+.sidenav a:hover {
+    padding: 10px 8px 10px 16px;
+}
+
+.suggestion-text {
+    font-size: 14px;
+}
+
+.profile-card .username {
+    font-size: 14px;
+}
+
+.sub-text {
+    font-size: 10px;
+}
+
+.right-col {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.get h2 {
+    font-size: 50px;
+}
+
+.hero h1 {
+    font-size: 60px;
+}
+
+.deconaton h2 {
+    font-size: 52px;
+    width: 52%;
+    margin-top: 10px;
+}
+
+.typing-demo {
+    font-size: 1.1rem;
+    letter-spacing: -2px;
+    transform: translateY(-70px);
+}
+
+.h1twisterimage h1 {
+    font-size: 45px;
+}
+
+.hero {
+    background-size: 25%;
+}
+
+.imageTw {
+    width: 250px;
+    height: 250px;
+}   
+
+.info h1 { 
+    font-size: 40px;
+    letter-spacing: -3px;
+    -webkit-text-stroke-width: 0.2px;
+}   
+
+.info p {
+    font-size: 1.2rem;
+}
+
+.container {
+    max-width: 900px;
+}
+
+main {
+    grid-template-columns: repeat(3, 288px);
+}
+
+.card-body {
+    gap: 12px;
+}

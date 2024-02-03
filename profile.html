@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en"
+    style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://cdn.shopify.com/s/files/1/2979/3338/files/UGC-style.css" />
+    <script type="text/javascript" src="https://cdn.shopify.com/s/files/1/2979/3338/files/UGC_-_new_v.3.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- css -->
+
+    <link rel="stylesheet" href="pagesCss/profire.css">
+
+    <link rel="stylesheet" href="navbar.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.css">
+    <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="icon" href="logolight.png">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Profile</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+    <ul class="top-nav">
+        <div class="headernav">
+            <h1 style="font-family: SATO;">Twister</h1>
+            <div class="toggle">
+                <ion-icon name="moon-outline"></ion-icon>
+            </div>
+            <ion-icon name="duplicate-outline"></ion-icon>
+        </div>
+        <div class="menumav">
+            <li><a class="active" href="#home">Following</a></li>
+            <li><a href="#news">Friends</a></li>
+            <li><a href="#contact">Language</a></li>
+            <li><a href="#about">Notification</a></li>
+            <li><a href="#about">profile</a></li>
+        </div>
+    </ul>
+
+
+    <div class="wrapper">
+        <div class="navbar">
+            <a href="#" class="navitem active" onclick="select(this)" data-clr="#e4ecfa">
+                <div class="indicator"></div>
+                <div class="hoverindicator"></div>
+                <ion-icon name="home-outline"></ion-icon>
+            </a>
+            <a href="#" class="navitem" onclick="select(this)" data-clr="#f0e4fa">
+                <div class="indicator"></div>
+                <div class="hoverindicator"></div>
+                <ion-icon name="settings-outline"></ion-icon>
+            </a>
+            <div class="navsearch">
+                <input class="searchbox"></input>
+                <div class="searchicon" onclick="selectsearch()">
+                    <ion-icon name="search-outline"></ion-icon>
+                </div>
+            </div>
+            <a href="#" class="navitem" onclick="select(this)" data-clr="#fff6cc">
+                <div class="indicator"></div>
+                <div class="hoverindicator"></div>
+                <ion-icon name="person"></ion-icon>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        function select(el) {
+            document.querySelector(".navsearch").classList.remove("active")
+            document.querySelector(".active").classList.remove("active")
+
+            el.classList.add("active")
+
+            document.body.style.setProperty('--activeclr', el.dataset.clr);
+        }
+        function selectsearch() {
+            console.log("select")
+            const el = document.querySelector(".navsearch")
+            el.classList.toggle("active")
+            if (el.classList.contains("active")) {
+                document.querySelector(".searchbox").focus()
+            }
+        }
+    </script>
+
+    <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+    </div>
+
+    <div class="content1">
+        <div class="sidenav">
+            <h1>Twister</h1>
+            <a id="active" href="#">Twister Feed</a>
+            <hr id="Spaceblank" style="margin-bottom: 15px;">
+            <a href="#">Pinned<ion-icon name="bookmarks-outline"></ion-icon></a>
+            <a href="#">Following<ion-icon name="add-outline"></ion-icon></a>
+            <a href="#">Friends<ion-icon name="person-add-outline"></ion-icon></a>
+            <a id="myBtn" href="#">Notification<ion-icon name="mail-unread-outline"></ion-icon></a>
+            <a href="#">Create<ion-icon name="duplicate-outline"></ion-icon></a>
+            <a href="#">View Post<ion-icon name="images-outline"></ion-icon></a>
+            <a href="#">Profile<ion-icon name="person-outline"></ion-icon></a>
+            <a href="./settings.html">Settings<ion-icon name="settings-outline"></ion-icon></a>
+            <a href="#">Open app<ion-icon name="open-outline"></ion-icon></a>
+            <a href="login.html">Login<ion-icon name="enter-outline"></ion-icon></a>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="navsetting">
+            <div class="home">
+                <h1>Settings<i class='bx bxs-cog'></i></h1>
+            </div>
+            <div class="navcontent">
+                <div class="imagepro">
+                    <img src="https://p16-sign-va.tiktokcdn.com/tos-maliva-avt-0068/2c7bfa0b8735376d5a285de7d35b5014~c5_100x100.jpeg?lk3s=a5d48078&x-expires=1705759200&x-signature=X0ITCY%2FdfRvXdvGiiXKzy%2BETZFg%3D"
+                        alt="none">
+                    <div class="imagedesipron">
+                        <h1>Peakk</h1>
+                        <p>hello i am peakk twister developer</p>
+                    </div>
+                </div>
+                <div class="navussd">
+                    <a href="#">Language</a>
+                    <a href="#">Text Size</a>
+                    <a href="#">Rename</a>
+                </div>
+            </div>
+        </div>
+
+        <main>
+            <section>
+                <div class="imageGallery">
+                    <button>
+                        <picture>
+                            <img width="309" height="309"
+                                src="https://raw.githubusercontent.com/mobalti/open-props-interfaces/main/image-gallery/images/img-1.webp"
+                                alt="A cute cat" loading="lazy" />
+                        </picture>
+                    </button>
+                    <button>
+                        <picture>
+                            <img width="309" height="309"
+                                src="https://raw.githubusercontent.com/mobalti/open-props-interfaces/main/image-gallery/images/img-2.webp"
+                                alt="A cute cat" loading="lazy" />
+                        </picture>
+                    </button>
+                    <button>
+                        <picture>
+                            <img width="309" height="309"
+                                src="https://raw.githubusercontent.com/mobalti/open-props-interfaces/main/image-gallery/images/img-3.webp"
+                                alt="A cute cat" loading="lazy" />
+                        </picture>
+                    </button>
+                    <button>
+                        <picture>
+                            <img width="309" height="309"
+                                src="https://raw.githubusercontent.com/mobalti/open-props-interfaces/main/image-gallery/images/img-4.webp"
+                                alt="A cute cat" loading="lazy" />
+                        </picture>
+                    </button>
+                    <button>
+                        <picture>
+                            <img width="309" height="309"
+                                src="https://raw.githubusercontent.com/mobalti/open-props-interfaces/main/image-gallery/images/img-5.webp"
+                                alt="A cute cat" loading="lazy" />
+                        </picture>
+                    </button>
+                    <button>
+                        <picture>
+                            <img width="309" height="309"
+                                src="https://raw.githubusercontent.com/mobalti/open-props-interfaces/main/image-gallery/images/img-6.webp"
+                                alt="A cute cat" loading="lazy" />
+                        </picture>
+                    </button>
+                    <button>
+                        <picture>
+                            <img width="309" height="309"
+                                src="https://raw.githubusercontent.com/mobalti/open-props-interfaces/main/image-gallery/images/img-7.webp"
+                                alt="A cute cat" loading="lazy" />
+                        </picture>
+                    </button>
+                    <button>
+                        <picture>
+                            <img width="309" height="309"
+                                src="https://raw.githubusercontent.com/mobalti/open-props-interfaces/main/image-gallery/images/img-8.webp"
+                                alt="A cute cat" loading="lazy" />
+                        </picture>
+                    </button>
+                    <button>
+                        <picture>
+                            <img width="309" height="309"
+                                src="https://raw.githubusercontent.com/mobalti/open-props-interfaces/main/image-gallery/images/img-9.webp"
+                                alt="A cute cat" loading="lazy" />
+                        </picture>
+                    </button>
+                    <button>
+                        <picture>
+                            <img width="309" height="309"
+                                src="https://raw.githubusercontent.com/mobalti/open-props-interfaces/main/image-gallery/images/img-10.webp"
+                                alt="A cute cat" loading="lazy" />
+                        </picture>
+                    </button>
+                    <button>
+                        <picture>
+                            <img width="309" height="309"
+                                src="https://raw.githubusercontent.com/mobalti/open-props-interfaces/main/image-gallery/images/img-11.webp"
+                                alt="A cute cat" loading="lazy" />
+                        </picture>
+                    </button>
+                    <button>
+                        <picture>
+                            <img width="309" height="309"
+                                src="https://raw.githubusercontent.com/mobalti/open-props-interfaces/main/image-gallery/images/img-12.webp"
+                                alt="A cute cat" loading="lazy" />
+                        </picture>
+                    </button>
+                </div>
+
+                <dialog class="dialog" id="dialog">
+                    <div class="dialogContainer">
+                        <div class="carousel" id="carousel">
+                            <picture>
+                                <img width="309" height="309"
+                                    src="https://raw.githubusercontent.com/mobalti/open-props-interfaces/main/image-gallery/images/img-1.webp"
+                                    alt="A cute cat" loading="lazy" />
+                            </picture>
+                            <picture>
+                                <img width="309" height="309"
+                                    src="https://raw.githubusercontent.com/mobalti/open-props-interfaces/main/image-gallery/images/img-2.webp"
+                                    alt="A cute cat" loading="lazy" />
+                            </picture>
+                            <picture>
+                                <img width="309" height="309"
+                                    src="https://raw.githubusercontent.com/mobalti/open-props-interfaces/main/image-gallery/images/img-3.webp"
+                                    alt="A cute cat" loading="lazy" />
+                            </picture>
+                            <picture>
+                                <img width="309" height="309"
+                                    src="https://raw.githubusercontent.com/mobalti/open-props-interfaces/main/image-gallery/images/img-4.webp"
+                                    alt="A cute cat" loading="lazy" />
+                            </picture>
+                            <picture>
+                                <img width="309" height="309"
+                                    src="https://raw.githubusercontent.com/mobalti/open-props-interfaces/main/image-gallery/images/img-5.webp"
+                                    alt="A cute cat" loading="lazy" />
+                            </picture>
+                            <picture>
+                                <img width="309" height="309"
+                                    src="https://raw.githubusercontent.com/mobalti/open-props-interfaces/main/image-gallery/images/img-6.webp"
+                                    alt="A cute cat" loading="lazy" />
+                            </picture>
+                            <picture>
+                                <img width="309" height="309"
+                                    src="https://raw.githubusercontent.com/mobalti/open-props-interfaces/main/image-gallery/images/img-7.webp"
+                                    alt="A cute cat" loading="lazy" />
+                            </picture>
+
+                            <picture>
+                                <img width="309" height="309"
+                                    src="https://raw.githubusercontent.com/mobalti/open-props-interfaces/main/image-gallery/images/img-8.webp"
+                                    alt="A cute cat" loading="lazy" />
+                            </picture>
+
+                            <picture>
+                                <img width="309" height="309"
+                                    src="https://raw.githubusercontent.com/mobalti/open-props-interfaces/main/image-gallery/images/img-9.webp"
+                                    alt="A cute cat" loading="lazy" />
+                            </picture>
+                            <picture>
+                                <img width="309" height="309"
+                                    src="https://raw.githubusercontent.com/mobalti/open-props-interfaces/main/image-gallery/images/img-10.webp"
+                                    alt="A cute cat" loading="lazy" />
+                            </picture>
+                            <picture>
+                                <img width="309" height="309"
+                                    src="https://raw.githubusercontent.com/mobalti/open-props-interfaces/main/image-gallery/images/img-11.webp"
+                                    alt="A cute cat" loading="lazy" />
+                            </picture>
+                            <picture>
+                                <img width="309" height="309"
+                                    src="https://raw.githubusercontent.com/mobalti/open-props-interfaces/main/image-gallery/images/img-12.webp"
+                                    alt="A cute cat" loading="lazy" />
+                            </picture>
+                        </div>
+                        <div class="controls">
+                            <button id="prevBtn" onclick="carousel.scrollBy(-100, 0)">
+                                <i class="ri-arrow-left-circle-fill"></i>
+                            </button>
+                            <button id="nextBtn" onclick="carousel.scrollBy(100, 0)">
+                                <i class="ri-arrow-right-circle-fill"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <button id="closeDialogBtn" class="closeDialog">
+                        <i class="ri-close-line"></i>
+                    </button>
+                </dialog>
+            </section>
+        </main>
+
+        <!-- emd container dont elase -->
+    </div>
+    <!-- darkmode Javascript -->
+
+    <script>
+        const body = document.querySelector("body"),
+            toggle = document.querySelector(".toggle");
+        let getMode = localStorage.getItem("mode");
+        if (getMode && getMode === "dark") {
+            body.classList.add("dark");
+            toggle.classList.add("active");
+        }
+        toggle.addEventListener("click", () => {
+            body.classList.toggle("dark");
+            if (!body.classList.contains("dark")) {
+                return localStorage.setItem("mode", "light");
+            }
+            localStorage.setItem("mode", "dark");
+        });
+        toggle.addEventListener("click", () => toggle.classList.toggle("active"));
+    </script>
+
+    <script>
+        const dialog = document.querySelector('#dialog');
+        const images = document.querySelectorAll('.imageGallery button');
+        const closeDialogBtn = document.querySelector('#closeDialogBtn');
+
+        function openDialog(index) {
+            if (!document.startViewTransition) {
+                dialog.showModal();
+                document.querySelectorAll('#carousel img')[index].scrollIntoView();
+            } else handleTransition(index);
+        }
+
+        // Wait until the transition finished and the dialog opens before scrolling into view.
+        async function handleTransition(index) {
+            const transition = document.startViewTransition(() => dialog.showModal());
+            try {
+                await transition.finished;
+            } finally {
+                document.querySelectorAll('#carousel img')[index].scrollIntoView();
+            }
+        }
+
+        const closeDialog = () => {
+            if (!document.startViewTransition) dialog.close();
+            else document.startViewTransition(() => dialog.close());
+        };
+
+        images.forEach((img, index) => {
+            console.log(index);
+            img.addEventListener('click', () => openDialog(index));
+        });
+
+        closeDialogBtn.addEventListener('click', () => closeDialog());
+    </script>
+
+</body>
+
+</html>

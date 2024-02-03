@@ -1,0 +1,49 @@
+.get h2 { 
+    font-size: 115px;
+}
+
+.hero h1 {
+    font-size: 100px;
+}
+
+.deconaton h2 {
+    font-size: 96px;
+    width: 90%;
+}
+
+.typing-demo {
+    font-size: 40px;
+    transform: translateY(30px);
+}
+
+.sidenav {
+    width: 300px;
+}
+
+.sidenav h1 { 
+    font-size: 55px;
+}
+
+#active {
+    font-size: 32px;
+}
+
+.sidenav a {
+    font-size: 30px;
+}
+
+.sidenav ion-icon {
+    font-size: 30px;
+}
+
+.progress-container {
+    height: 8px;
+}
+
+.progress-bar {
+    height: 8px;
+}
+
+.h1twisterimage h1 {
+    font-size: 68px;
+}
