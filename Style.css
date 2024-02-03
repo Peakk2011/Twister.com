@@ -102,6 +102,8 @@ body.dark {
 @font-face {
   font-family: THONB;
   src: url(/Font/SFThonburi-Bold.ttf);
+  src: url(/Font/SFThonburi-Regular.ttf);
+  src: url(/Font/SFThonburi-Semibold.ttf);
 }
 
 
@@ -3426,4 +3428,23 @@ body.dark .imageTw {
   .iconnav {
     gap: 55px;
   }
+}
+
+/* font-family: 'DM Sans', sans-serif; */
+
+.sidenav h1 {
+  font-family: SFPRO;
+}
+
+.home h1 {
+  font-family: 'DM Sans', sans-serif;
+}
+
+#active {
+  font-family: SFPRO;
+}
+
+.card-body h1 {
+  font-family: Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif;
+  font-weight: 500;
 }
