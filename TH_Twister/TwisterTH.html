@@ -221,13 +221,13 @@
   </div>
 
   <style>
-    .sidenav a {
+    /* .sidenav a {
       font-family: THONB;
-    }
+    } */
 
-    .sidenav a:hover {
+    /* .sidenav a:hover {
       font-family: Seed;
-    }
+    } */
   </style>
 
   <div class="content1">
@@ -235,8 +235,8 @@
       <h1 style="  font-family: Seed;">ทวิสเตอร์</h1>
       <a id="active" href="#" style="font-family: Seed;">ทวิสเตอร์ Feed</a>
       <hr id="Spaceblank" style="margin-bottom: 15px;">
-      <a href="#" style="font-family: THONB;">ปักหมุด<ion-icon name="bookmarks-outline"></ion-icon></a>
-      <a href="#" style="font-family: THONB;">กําลังติดตาม<ion-icon name="add-outline"></ion-icon></a>
+      <a href="#">ปักหมุด<ion-icon name="bookmarks-outline"></ion-icon></a>
+      <a href="#">กําลังติดตาม<ion-icon name="add-outline"></ion-icon></a>
       <a href="#">เพื่อน<ion-icon name="person-add-outline"></ion-icon></a>
       <a id="myBtn" href="#">การแจ้งเตือน<ion-icon name="mail-unread-outline"></ion-icon></a>
       <a href="#">สร้าง<ion-icon name="duplicate-outline"></ion-icon></a>
@@ -272,14 +272,15 @@
       <section class="Scrolllock"></section>
 
       <style>
-        .typing-demo, .typing-demo-2 {
+        .typing-demo,
+        .typing-demo-2 {
           letter-spacing: 0px;
           font-family: FC-Fra;
         }
       </style>
 
       <div class="wrapperTYPE">
-        <div class="typing-demo" style="  font-family: FC-Fra; letter-spacing: 0px;" >
+        <div class="typing-demo" style="  font-family: FC-Fra; letter-spacing: 0px;">
           ยินดีต้อนรับสู่เว็บเพจทวิสเตอร์
         </div>
       </div>
@@ -313,14 +314,15 @@
         <div class="Twisterimage" data-aos="fade-right" data-aos-duration="900">
           <div class="h1twisterimage" data-aos="fade-right">
             <h1 style="font-family: Seed;">Twister คือ facebook แต่มัน<span class="text-gradient" data-aos="fade-right"
-                data-aos-duration="2300" style="font-family: THONB; margin-left: 10px; font-size: 52px;">ดีกว่า</span></h1>
+                data-aos-duration="2300" style="font-family: Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif; font-weight: 400; margin-left: 10px; font-size: 52px;">ดีกว่า</span>
+            </h1>
           </div>
           <div class="imageTw"></div>
         </div>
 
         <div class="wrapperTYPE-2">
           <div class="typing-demo-2" style="margin-top: 130px; ">
-            ทวิสเตอร์มี Dark Mode 
+            ทวิสเตอร์มี Dark Mode
           </div>
         </div>
 
@@ -338,19 +340,19 @@
           </div>
         </div> -->
 
-        <style>
-          .info h1 {
-            letter-spacing: 0px;
-            font-family: Seed;
-            font-size: 4em;
-            line-height: 1.1;
-          }
-        </style>
+      <style>
+        .info h1 {
+          letter-spacing: 0px;
+          font-family: Seed;
+          font-size: 4em;
+          line-height: 1.1;
+        }
+      </style>
 
       <section id="intro" data-aos="fade-right">
         <div class="info" style="font-family: Seed; letter-spacing: 0px;">
           <h1>หลายคนใช้ทวิสเตอร์</h1>
-          <p style="font-family: THONB;">
+          <p style="font-family: Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif;  font-weight: 500;">
             คุณพร้อมหรือยังสำหรับ Twister ที่ดูเหมือน Facebook และ Instagram แต่ปรับปรุง เรามีฟีเจอร์มากมายที่นี่
           </p>
         </div>
@@ -479,7 +481,8 @@
                 </div>
               </div>
               <div class="navussd">
-                <a href="create-post.html" target="_blank" style="font-family: Seed;">โพสต์<ion-icon name="duplicate-outline"></ion-icon></a>
+                <a href="create-post.html" target="_blank" style="font-family: Seed;">โพสต์<ion-icon
+                    name="duplicate-outline"></ion-icon></a>
                 <a href="#" style="font-family: Seed;">ตั้งค่า<ion-icon name="settings-outline"></ion-icon></a>
                 <a href="#" style="font-family: Seed;">ประวัติโดยย่อ<ion-icon name="person-outline"></ion-icon></a>
               </div>
@@ -2238,7 +2241,7 @@
 
       <div class="right-col">
         <p class="suggestion-text"
-          style="font-size: 22px; font-family: SATO; font-weight: 900; letter-spacing: -0.7px;">
+          style="font-size: 22px; font-weight: 900; letter-spacing: -0.7px;">
           User Account</p>
         <div class="profile-card">
           <div class="profile-pic">
@@ -2709,7 +2712,93 @@
 
   <!-- stylesheet or = CSS -->
 
+  <style>
+    @media only screen and (max-width: 700px) {
+      .wrapperTYPE {
+        transform: translateY(-200px);
+      }
 
+      .get h2 {
+        line-height: 1;
+      }
+
+      .hero h1 {
+        margin-top: 20px;
+      }
+
+      body .h1twisterimage h1 {
+        font-size: 45px;
+      }
+
+      .typing-demo-2 {
+        transform: translateY(-65px);
+      }
+
+      body .info h1 {
+        font-size: 2.5em;
+      }
+
+      .typing-demo {
+        transform: translateY(-10px);
+      }
+
+      .get h2 {
+        font-size: 80px;
+      }
+
+      .deconaton h2 {
+        transform: translateY(-18px);
+        max-width: 76%;
+        margin-top: 40px;
+      }
+
+      .hero h1 {
+        font-size: 61px;
+      }
+
+      body.dark .typing-demo {
+        letter-spacing: -0px;
+      }
+
+      body .h1twisterimage h1 {
+        font-size: 37px;
+      }
+
+      body .get h2 {
+        font-size: 72px;
+      }
+    }
+
+    .deconaton h2 {
+      width: 80%;
+    }
+
+    .get h2 {
+      font-size: 100px;
+    }
+
+
+    /* color config darkmode */
+
+    body.dark .get h2 {
+      color: #d0e3b4;
+    }
+
+    body.dark .typing-demo {
+      color: #d0e3b4;
+    }
+
+    body.dark .typing-demo-2 {
+      color: #d0e3b4;
+    }
+
+    body.dark .imageTw {
+      background: url(../TextlogoDark.png) no-repeat;
+      background-position: 2rem;
+      width: 300px;
+      background-size: 70%;
+    }
+  </style>
 
 </body>
 
